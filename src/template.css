@@ -38,6 +38,9 @@ body {
 	color: white;
 	/*background: #BDBDBD;*/
 }
+section{
+	color: #000000;
+}
 #mwt_mwt_slider_scroll
 {
 	top: 0;
@@ -95,6 +98,19 @@ body {
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
+}
+.container_2 {
+	background-color: #ffffff;
+	width: 100%;
+	position: relative;
+	float: left;
+	padding-left: 230px;
+	
+}
+.container h3{
+	color: #000000;
+	position: absolute;
+	padding-top: 20px;
 }
 .columns {
 	width: 25%;
@@ -264,6 +280,10 @@ header {
 	padding-bottom: 10px;
 
 	border-bottom: 2px solid #2C9AB7;
+}
+.img_homepage{
+	width: 100%;
+	height: 50%;
 }
 .logo {
 	color: #fff;
