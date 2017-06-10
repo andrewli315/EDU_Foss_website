@@ -273,7 +273,6 @@ section{
 	margin-top: 0;
 	bottom:0;
 }
-
 div.description{
 	position:absolute; /* absolute position (so we can position it where we want)*/
 	bottom:0px; /* position will be on bottom */
@@ -284,6 +283,8 @@ div.description{
 	color:white;
 	opacity:0.6; /* transparency */
 	filter:alpha(opacity=60); /* IE transparency */
+	
+	 transition: all 0.2s ease;
 }
 p.description_content{
 	padding:10px;
@@ -291,11 +292,13 @@ p.description_content{
 	font-size: 30px;
 }
 div.description:hover{
-	
+	height: 100%;
 	opacity:0.8; /* transparency */
 	filter:alpha(opacity=80); /* IE transparency */
 }
-
+.my_block{
+	display: none;
+}
 
 
 
@@ -413,10 +416,10 @@ header {
 	float: left;
 }
 .table{
-	width="95%";
-	bordercolor="#66ccff";
-	border：transparent;
-	bgcolor="#ffffb3";
+	width: "95%";
+	bordercolor: "#66ccff";
+	border："transparent";
+	bgcolor: "#ffffb3";
 }
 .intro .column h3 {
 	color: #FFFFFF;
@@ -502,6 +505,85 @@ header {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
+        .l-list {
+            position: absolute;
+            top: 100%;
+            z-index: -1;
+            width: 100%;
+            padding: 1px 0;
+            background-color: #fff;
+            border: 1px solid #cecece;
+            box-sizing: border-box;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .l-list-item {
+            list-style: none;
+            padding: 4px 4px;
+        }
+        .l-list-item a {
+            display: block;
+            padding: 1px 0;
+            font-size: 16px;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s linear;
+        }
+        .l-list-item a:hover {
+            color: #fff;
+            background-color: #cecece;
+        }
+        .l-drop-menu {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: 50px auto;
+        }
+        .l-drop-menu > span {
+            position: relative;
+            display: block;
+            padding: 8px 20px;
+            text-align: center;
+            color: #58a;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .l-drop-menu > span::after {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            content: '';
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            border-width: 8px;
+            border-style: dashed dashed solid;
+            border-color: transparent transparent #c2c2c2;
+            transition: all 0.3s linear;
+        }
+        .l-drop-menu > span:hover {
+            color: #fff;
+            background-color: #cecece;
+        }
+        .l-drop-menu > span:hover::after {
+            top: 16px;
+            border-style: solid dashed dashed;
+            border-color: #ffffff transparent transparent;
+        }
+        .l-menu-1 .l-list {
+            transform: translate3d(0, -10px, 0);
+            backface-visibility: hidden;
+            transition: all 0.3s linear;
+        }
+        .l-menu-1:hover .l-list {
+            z-index: 2;
+            overflow: auto;
+            opacity: 1;
+            visibility: visible;
+            transform: translate3d(0, 0, 0);
+        }
 
 /* Mobile */
 @media (max-width: 320px) {
