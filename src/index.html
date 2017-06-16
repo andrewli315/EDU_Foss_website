@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -11,239 +12,297 @@
     <link rel="icon" href="../img/edufoss.png">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>EDU.Foss</title>
-  </head>
-  <body>
+    <script type="text/javascript" language="JavaScript">
+        function ShowContent(d) {
+            document.getElementById(d).style.display = "block";
+        }
+
+        function HideContent(d) {
+            document.getElementById(d).style.display = "none";
+        }
+    </script>
+</head>
+
+<body id="home">
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">EDU.Foss</a>
+        <a class="navbar-brand" href="#">EDU.Foss</a>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">EDU_Project</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="homelink" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a id="aboutlink" class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="projectlink" href="#">EDU_Project</a>
+                </li>
+                <!--
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+								-->
+            </ul>
+        </div>
     </nav>
 
     <div class="container">
-      <div class="starter-template" height="80%">
-        <img class="img_homepage" src="../img/homepage-01.png">        
-      </div>
-    </div><!-- /.codintainer -->
+        <div class="starter-template" height="80%">
+            <img class="img_homepage" src="../img/homepage-01.png">
+        </div>
+    </div>
+    <!-- /.codintainer -->
     <section class="section section--steps">
-    <div class="container_2">
-    	<div class="row">
-      		<div class="col-sm-12 col-lg-10 col-lg-push-1">
-      		<div class="row">
-      			<div class="row__parallel-sm row__parallel-md row__parallel-lg">
-      				<br>
-      					<div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
-      					<br>
-      						<h1 class="step__heading">What we concern about</h1>
-      						<p class="step__caption h5">
-      						<br>
+        <div class="container_2" id="content">
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 col-lg-push-1">
+                    <div class="row">
+                        <div class="row__parallel-sm row__parallel-md row__parallel-lg">
+                            <br>
+                            <div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
+                                <br>
+                                <h1 class="step__heading">What we concern about</h1>
+                                <p class="step__caption h5">
+                                    <br> 我們致力於打造一個更良好的資訊教育環境，
 
-      							我們致力於打造一個更良好的資訊教育環境，<br>讓國中小的老師們能夠以更適當的教材，<br>
-      							教導台灣的學生，以有趣的方式與活動讓學生學習資訊科學。
-      						</p>
-      						<br>
-      					</div>
-      					<div class="col-sm-5 col-sm-push-7 col-md-4 col-md-push-8">
-      					<img class="img-fluid" width="50%" src="../img/1.png">
-      					</div>
-      			</div>
-      			
-      		</div>
-      </div>
-      </div>
-      </div>
-	</section>
+                                    <br>讓國中小的老師們能夠以更適當的教材，<br> 教導台灣的學生，以有趣的方式與活動讓學生學習資訊科學。
+                                </p>
+                                <br>
+                            </div>
+                            <div class="col-sm-5 col-sm-push-7 col-md-4 col-md-push-8">
+                                <img class="img-fluid" width="50%" style="float:right;" src="../img/1.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-	<section class="section section--steps">
-    <div class="container_2">
-    	<div class="row">
-      		<div class="col-sm-12 col-lg-10 col-lg-push-1">
-      		<div class="row">
-      			<div class="row__parallel-sm row__parallel-md row__parallel-lg">
-      			<br>
+    <section class="section section--steps">
+        <div class="container_2">
+            <div class="row">
+                <div class="col-sm-12 col-lg-10 col-lg-push-1">
+                    <div class="row">
+                        <div class="row__parallel-sm row__parallel-md row__parallel-lg">
+                            <br>
+                            <div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
+                                <br>
+                                <h1 class="step__heading">The way we approach</h1>
+                                <p class="step__caption h5">
+                                    我們翻譯國外作者所著作的一本資訊科學啟謀教材--不插電的資訊科學
+                                    <br> 並且規劃成不同教案與網頁小遊戲，
+                                    <br>利用互動式學習，讓小朋友能夠更 有興趣。
+                                </p>
+                                <br>
+                            </div>
+                            <div class="col-sm-35 col-sm-push-7 col-md-4 col-md-push-8">
+                                <img class="img-fluid" width="50%" style="float:right;" src="../img/2.png">
+                            </div>
 
-      					<div class="col-sm-5 col-sm-push-7 col-md-4 col-md-push-8">
-      					<img class="img-fluid" width="50%" src="../img/2.png">
-      					</div>
-      					<div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
-      					<br>
-      						<h1 class="step__heading">The way we approach</h1>
-      						<p class="step__caption h5">
-      							我們翻譯國外作者所著作的一本資訊科學啟謀教材--不插電的資訊科學
-      							<br>
-      							並且規劃成不同教案與網頁小遊戲，
-      							<br>利用互動式學習，讓小朋友能夠更
-      							有興趣。
-      						</p>
-      						<br>
-      					</div>
-      			</div>
-      			
-      		</div>
-      </div>
-      </div>
-</div>
-	</section>
-		
-	 <div class="frame">
-		<section class="section section--steps" style="height: 110%">
-    <div class="container_2">
-    	<div class="row">
-      		<div class="col-sm-12 col-lg-10 col-lg-push-1">
-      		<div class="row">
-      			<div class="row__parallel-sm row__parallel-md row__parallel-lg">
-      				<br>
-      					<div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
-      					<br>
-      						<h1 class="step__heading">What we concern about</h1>
-      						<p class="step__caption h5">
-      						<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      							我們致力於打造一個更良好的資訊教育環境，<br>讓國中小的老師們能夠以更適當的教材，<br>
-      							教導台灣的學生，以有趣的方式與活動讓學生學習資訊科學。
-      						</p>
-      						<br>
-      					</div>
-      					<div class="col-sm-5 col-sm-push-7 col-md-4 col-md-push-8">
-      					<img class="img-fluid" width="50%" src="../img/1.png">
-      					</div>
-      			</div>
-      			
-      		</div>
-      </div>
-      </div>
-      </div>
-	</section>
-		<section class="section section--steps">
-    <div class="container_2">
-    	<div class="row">
-      		<div class="col-sm-12 col-lg-10 col-lg-push-1">
-      		<div class="row">
-      			<div class="row__parallel-sm row__parallel-md row__parallel-lg">
-      				<br>
-      					<div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
-      						<br>
-      						<br>
-      						<br>
-      						<br>
-      						<br>
-      						<br>
-      					</div>
-      			</div>
-      			
-      		</div>
-      </div>
-      </div>
-      </div>
-	</section>
-		</div>
-    <div class="container">
-    
-      <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
-			 <img class="img-fluid description"  src="../img/img-02.jpg" alt="Cinque Terre">
-			 			<div class="description" onMouseMove="ShowContent('l1')" onMouseOut="HideContent('l1')">
-						<!-- description content -->
-						<p class="description_content"  >Text over image with transparency applied</p>
-						<div id="l1" style="display: none">
-							<ul class="list-group">
-								<li class="list-group-item">First item</li>
-								<li class="list-group-item">Second item</li>
-								<li class="list-group-item">Third item</li>
-							 </ul>
-						</div>
-						<!-- end description content -->
-						</div>
-       </div>
-       <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
-       	 <img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
-			 			<div class="description">
-						<!-- description content -->
-						<p class="description_content">Text over image with transparency applied</p>
-						<!-- end description content -->
-						</div>
-       </div>
-       <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
-       	 <img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
-			 			<div class="description">
-						<!-- description content -->
-						<p class="description_content">Text over image with transparency applied</p>
-						<!-- end description content -->
-						</div>
-       </div>       
+    <div class="frame">
+        <section class="section section--steps" style="height: 110%">
+            <div class="container_2">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-10 col-lg-push-1">
+                        <div class="row">
+                            <div class="row__parallel-sm row__parallel-md row__parallel-lg">
+                                <br>
+                                <div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
+                                    <br>
+                                    <h1 class="step__heading">Join us</h1>
+                                    <p class="step__caption h5">
+                                        <br>歡迎加入我們
+
+                                        <br>讓台灣的資訊教育變得更好，更充實。
+                                    </p>
+                                    <br>
+                                </div>
+                                <br>
+                                <div class="col-sm-5 col-sm-push-7 col-md-4 col-md-push-8">
+                                    <img class="img-fluid" width="50%" style="float:right;" src="../img/1.png">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--steps">
+            <div class="container_2">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-10 col-lg-push-1">
+                        <div class="row">
+                            <div class="row__parallel-sm row__parallel-md row__parallel-lg">
+                                <br>
+                                <div class="col-sm-7 col-sm-pull-5 col-md-8 col-md-pull-4">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container" id="project">
+
         <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
-  			<img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
-			 			<div class="description">
-						<!-- description content -->
-						<p class="description_content">Text over image with transparency applied</p>
-						<!-- end description content -->
-						</div>
-  		  </div>
-  		  <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
-  			<img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
-			 			<div class="description">
-						<!-- description content -->
-						<p class="description_content">Text over image with transparency applied</p>
-						<!-- end description content -->
-						</div>
-  		  </div>
-  		  <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
-  			<img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
-			 			<div class="description">
-						<!-- description content -->
-						<p class="description_content">Text over image with transparency applied</p>
-						<!-- end description content -->
-						</div>
-  		  </div>    
-      </div>
+            <img class="img-fluid description" src="../img/img-02.jpg" alt="Cinque Terre">
+            <div class="description" onMouseMove="ShowContent('l1');" onMouseOut="HideContent('l1');">
+                <!-- description content -->
+                <p class="description_content">CS Unpluged Part 1 </p>
+                <div id="l1" style="display: none">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://google.com">計算點點 — 二進位數字</a></li>
+                        <li class="list-group-item"><a href="https://google.com">用數字表示顏色 — 圖像壓縮法</a></li>
+                        <li class="list-group-item"><a href="https://google.com">資料宅即便 — 文字壓縮</a></li>
+                        <li class="list-group-item"><a href="https://google.com">卡牌翻轉魔術 — 錯誤的發現與修正</a></li>
+                        <li class="list-group-item"><a href="https://google.com">二十個問題 — 資訊理論</a></li>
+                    </ul>
+                </div>
+                <!-- end description content -->
+            </div>
+        </div>
+        <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
+            <img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
+            <div class="description" onMouseMove="ShowContent('l2');" onMouseOut="HideContent('l2');">
+                <!-- description content -->
+                <p class="description_content">CS Unpluged Part 2 </p>
+                <div id="l2" style="display: none">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">海戰棋 — 探索搜尋法</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">最輕與最重 — 排序搜尋法</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">與時間競賽 — 排序網路</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">泥濘城市 — 最小生成樹</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">橘子遊戲 — 網路中的路由與死結</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">石板傳送 — 網路通訊協定</a></li>
+                    </ul>
+                </div>
+                <!-- end description content -->
+            </div>
+        </div>
+        <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
+            <img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
+            <div class="description" onMouseMove="ShowContent('l3');" onMouseOut="HideContent('l3');">
+                <!-- description content -->
+                <p class="description_content">CS Unpluged Part 3 </p>
+                <div id="l3" style="display: none">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">尋寶遊戲 — 有限狀態自動機</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">行動的指示 — 程式語言</a></li>
+                    </ul>
+                </div>
+                <!-- end description content -->
+            </div>
+        </div>
+        <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
+            <img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
+            <div class="description" onMouseMove="ShowContent('l4');" onMouseOut="HideContent('l4');">
+                <!-- description content -->
+                <p class="description_content">CS Unpluged Part 4 </p>
+                <div id="l4" style="display: none">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">貧窮的製圖師 — 著色問題</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">旅遊小鎮 — 支配集</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">冰之路 — 斯坦納樹</a></li>
+                    </ul>
+                </div>
+                <!-- end description content -->
+            </div>
+        </div>
+        <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
+            <img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
+            <div class="description" onMouseMove="ShowContent('l5');" onMouseOut="HideContent('l5');">
+                <!-- description content -->
+                <p class="description_content">CS Unpluged Part 5 </p>
+                <div id="l5" style="display: none">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">傳遞機密 — 資訊保密協定</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">秘魯式拋硬幣 — 加密協定</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">孩子的祕密 — 公開金鑰加密系統</a></li>
+                    </ul>
+                </div>
+                <!-- end description content -->
+            </div>
+        </div>
+        <div class="col-sm-4" style="border: 3px solid #F2F2F2;">
+            <img class="img-fluid" src="../img/img-02.jpg" alt="Cinque Terre" height="200">
+            <div class="description" onMouseMove="ShowContent('l6')" onMouseOut="HideContent('l6');">
+                <!-- description content -->
+                <p class="description_content">CS Unpluged Part 6 </p>
+                <div id="l6" style="display: none">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">巧克力工廠 — 人性化界面設計</a></li>
+                        <li class="list-group-item"><a target="_blank" href="https://google.com">和電腦對話 — 圖靈測試</a></li>
+                    </ul>
+                </div>
+                <!-- end description content -->
+            </div>
+        </div>
+    </div>
     <footer class="footer">
-      <p>
-      <strong> EDU.Foss </strong>&nbsp;2017 <a href="http://www.csie.ncku.edu.tw/ncku_csie/" style="color: white"><strong>  成功大學</strong>  <small>資訊工程學系</small></a>
-      </p>
-        
-      <i class="fa fa-facebook-square" href="https://www.facebook.com/ncku.edu.foss/" style="font-size:25px;color: white ;padding-top:-10px;"></i>
-      <i class="fa fa-cc" aria-hidden="true" style="font-size:25px; text-align: right;"></i>
+        <p>
+            <strong> EDU.Foss </strong>&nbsp;2017 <a target="_blank" href="http://www.csie.ncku.edu.tw/ncku_csie/" style="color:#D8D8D8"><strong>  成功大學</strong>  <small>資訊工程學系</small></a>
+        </p>
+
+        <a target="_blank" href="https://www.facebook.com/ncku.edu.foss"><i class="fa fa-facebook-square" href="https://www.facebook.com/ncku.edu.foss/" style="font-size:25px;color: white ;padding-top:-10px;"></i></a>
+        <i class="fa fa-cc" aria-hidden="true" style="font-size:25px; text-align: right;"></i>
     </footer>
-	
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/202d7ca274.js"></script>
     <script type="text/javascript" language="JavaScript">
-		function ShowContent(d) {
-			document.getElementById(d).style.display = "block";
-			}
-		function HideContent(d) {
-			document.getElementById(d).style.display = "none";
-			}
-	</script>
+        function goToByScroll(id) {
+            // Scroll
+            $('html,body').animate({
+                    scrollTop: $("#" + id).offset().top
+                },
+                'slow');
+        }
+        $("#aboutlink").click(function(e) {
+            e.preventDefault();
+            goToByScroll("content");
+        });
+
+        $("#projectlink").click(function(e) {
+            e.preventDefault();
+            goToByScroll("project");
+        });
+
+        $("#homelink").click(function(e) {
+            e.preventDefault();
+            goToByScroll("home");
+        });
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster 
@@ -253,7 +312,7 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    
-  </body>
-  
+
+</body>
+
 </html>
